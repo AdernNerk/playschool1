@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playschool</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/w3.css">
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito|Open+Sans" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 24px;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: grey;
+    word-wrap: break-word;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+}
+
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+h1, h2, h3, h4, h5, h6
+{
+	margin:0px;
+	padding: 0px;
+	color: #434343;
+	font-family: 'Nunito', sans-serif;
+}
+h6
+{
+	font-size: 16px;
+}
+h4
+{
+	font-size: 30px;
+}
+h3
+{
+	font-size: 35px;
+}
+h2
+{
+	font-size: 40px;
+}
+h1
+{
+	font-size: 45px;
+}
+.pads
+{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+@media (max-width:600px)
+{
+	.pads
+	{
+		padding-left: 10px;
+		padding-right: 10px;	
+	}
+}
+@media (max-width:900px) and (min-width:601px)
+{
+	.pads
+	{
+		padding-left: 30px;
+		padding-right: 30px;	
+	}
+}
+w3-container, w3-half, w3-quarter, w3-third, w3-twothird, w3-rest, w3-threequarter, w3-left, w3-right
+{
+	padding:0px;
+	margin:0px;
+}
+</style>
+
+<!--nav-->
+<style type="text/css">
+.nav
+{
+	background-color: #85ccc4;	
+}
+.nav img
+{
+	max-width: 140px;
+	height: auto;
+}
+.nav .button
+{
+	margin-top: 28px;
+	color: #fff;
+	font-size: 15px;
+	float: left;
+	letter-spacing: 1px;
+	margin-right: 13px;
+	margin-left: 13px;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+}
+</style>
+<div class="w3-container nav pads">
+	<div class="w3-left">
+		<img src="./img/logo-light.png">
+	</div>
+	<div class="w3-right">
+		<div class="button">Home</div>
+		<div class="button">Cources</div>
+		<div class="button">Events</div>
+		<div class="button">Pages</div>
+		<div class="button">Contact</div>
+	</div>
+</div>
+<!--/nav-->
+
+<!--first-->
+<style type="text/css">
+.first 
+{
+	background-image: url('./img/h1-slide-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 105px;
+	padding-bottom: 145px;
+}
+.first .heading
+{
+	font-family: 'Nunito', sans-serif;
+	color: #85ccc4;
+	font-size: 80px;	
+	font-weight: 700;
+	line-height: 80px;
+	text-shadow: rgb(86, 88, 91) 2px 3px;
+	margin-bottom: 32px;
+}
+.first .text
+{
+	font-size: 19px;
+    line-height: 34px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    letter-spacing: 0px;
+}
+.first .button
+{
+	background-color: #fdcf71;
+	line-height: 20px;
+	font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 160px;
+    text-align: center;
+    color: #404040;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+.first .button:hover
+{
+	background-color: #85ccc4;
+	color: #fff;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+</style>
+<div class="w3-container first w3-margin-bottom pads">
+	<div class="heading">Learning &<br>Playing</div>
+	<div class="text">Educator has fully integratedlearning managment system.
+		<br>
+	Create courses,individual lessons, and quizes.</div>
+	<div class="button">
+		VIEW MORE
+	</div>
+</div>
+<!--/first-->
+
+<!--3div-->
+<style type="text/css">
+.div3
+{
+	margin-top:-100px;
+	margin-bottom: 32px;
+}
+.div3 .one
+{
+	background-image: url('./img/h1-box-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:25px;
+}
+.div3 .heading
+{
+	color: #ffffff;
+    font-family: Amatic SC;
+    font-weight: 700;
+    text-shadow: 3px 3px #594b2b;
+    font-size: 54px;
+    margin-top:80px;
+    line-height: 54px;
+    margin-bottom: 20px;
+}
+.div3 .text
+{
+	color:#fff;
+	font-size: 17px;
+	font-weight: 500;
+    font-family: Nunito,sans-serif;
+    margin-bottom: 10px;
+}
+.div3 .two
+{
+	background-image: url('./img/h1-box-2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:25px;
+}
+.div3 .three
+{
+	background-image: url('./img/h1-box-3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:25px;
+}
+</style>
+<div class="w3-container div3 pads">
+	<div class="w3-container w3-third one">
+		<div class="heading">
+			PLAYGROUND
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+	<div class="w3-container w3-third two">
+		<div class="heading">
+			LEARNING
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>		
+	</div>
+	<div class="w3-container w3-third three">
+		<div class="heading">
+			ENTERTAINMENT
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+</div>
+<!--/3div-->
+
+<!--second-->
+<style type="text/css">
+.second
+{
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+.second h4
+{
+	font-weight: 800;
+	font-size: 25px;
+}
+.second .one
+{
+	display: table-row;
+}
+.second img
+{
+	width: 64px;
+	height: 64px;
+}
+.second .left
+{
+	display: table-cell;
+	width: 85px;
+	vertical-align: middle;
+}
+.second .right
+{
+	display: table-cell;
+	vertical-align: bottom;
+}
+.second .text
+{
+	margin-top:15px;
+	font-size: 15px;
+}
+.second .w3-third
+{
+	margin-bottom: 50px;
+}
+</style>
+<div class="w3-container second pads">
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-2.png">
+			</div>
+			<div class="right">
+				<h4>Play Time</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-3.png">
+			</div>
+			<div class="right">
+				<h4>Daycare</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-1.png">
+			</div>
+			<div class="right">
+				<h4>Learning</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-4.png">
+			</div>
+			<div class="right">
+				<h4>Outdoor</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-5.png">
+			</div>
+			<div class="right">
+				<h4>Healthy Meals</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+	<div class="w3-third w3-padding">
+		<div class="one">
+			<div class="left">
+				<img src="./img/h1-icon-6.png">
+			</div>
+			<div class="right">
+				<h4>Events</h4>
+			</div>
+		</div>
+		<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	</div>
+</div>
+<!--/second-->
+
+<!--third-->
+<style type="text/css">
+.third
+{
+	background-image: url('./img/h1-kids.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+.third .one
+{
+	background-color: #fdcf71;
+	padding:60px;
+	width:450px;
+}
+.third .one h1
+{
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 600;
+	letter-spacing: 1px;
+    text-shadow: 2px 2px #594b2b;
+}
+.third .one p
+{
+	color: #212121;
+	margin-top: 50px;
+}
+.third .one .button
+{
+	margin-top: 50px;
+	background-color: #fff;
+	padding:25px;
+	width:180px;
+	text-align: center;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 1px;
+	color:#212121;
+	font-size: 15px;
+	border-radius:3px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+.third .one .button:hover
+{
+	background-color: #434343;
+	color: #fff;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+</style>
+<div class="w3-container third pads">
+	<div class="w3-right one">
+		<h1>LEARNING SYSTEM</h1>
+		<p>
+			Donec sit amet turpis ut augue vestibulu.
+			<br><br>
+			Lorem ipsum dolor sit amet, ut sint fuisset his, tale tacimates volutpat te per, ad natum.
+			<br><br>
+			Mel id officiis deserunt eleifend, pertinax oportere no qui, ea vis aperiri.
+		</p>
+		<div class="button">READ MORE</div>
+	</div>
+</div>
+<!--/third-->
+
+<!--fourth-->
+<style type="text/css">
+.fourth
+{
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.fourth h1
+{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 40px;
+}
+.fourth p
+{
+	text-align: center;
+	line-height: 30px;
+	font-size: 17px;
+	margin-bottom: 60px;
+}
+.fourth h5
+{
+	font-size: 25px;
+	font-weight: 700;
+}
+.fourth img
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+.fourth .text
+{
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.fourth .boundary
+{
+	overflow: hidden;
+}
+.fourth .cover
+{
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+</style>
+<div class="w3-container fourth pads">
+	<h1>Latest Events</h1>
+	<p>
+		Etiam porttitor risus massa nec condiment gravida nibh vel velit auctor aliquetnean<br>
+		sollicitudin, lorem quis bibendum auci elit consequatipsutis sem nibh id elit.
+	</p>
+	<div class="w3-container">
+		<div class="w3-third w3-padding">
+			<div class="boundary">
+				<div class="cover">
+					<img src="./img/event-1.jpg">
+				</div>
+			</div>
+			<h5>Science Nature Day</h5>
+			<hr>
+			<div class="text">
+				<i class="far fa-clock"></i>&nbsp;&nbsp;August 7, 2018 @ 8:00 am - August 7, 2020 @ 8:00 am
+			</div>
+			<div class="text">
+	 			<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;354 Shuter St Toronto
+	 		</div>
+		</div>
+		<div class="w3-third w3-padding">
+			<div class="boundary">
+				<div class="cover">
+					<img src="./img/event-2.jpg">
+				</div>
+			</div>
+			<h5>Swimming For Kids</h5>
+			<hr>
+			<div class="text">
+				<i class="far fa-clock"></i>&nbsp;&nbsp;August 10, 2018 @ 9:00 am - August 10, 2020 @ 9:00 am
+			</div>
+			<div class="text">
+	 			<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;244 Lisgar St Toronto
+	 		</div>
+		</div>
+		<div class="w3-third w3-padding">
+			<div class="boundary">
+				<div class="cover">
+					<img src="./img/event-3.jpg">
+				</div>
+			</div>
+			<h5>Eagle Heights</h5>
+			<hr>
+			<div class="text">
+				<i class="far fa-clock"></i>&nbsp;&nbsp;August 15, 2018 @ 9:00 am - August 15, 2020 @ 9:00 am
+			</div>
+			<div class="text">
+	 			<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;354 Shuter St Toronto
+	 		</div>
+		</div>
+		
+	</div>
+</div>
+<!--/fourth-->
+
+<!--fifth-->
+<style type="text/css">
+.fifth
+{
+	background-image: url('./img/h1-birds.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+.fifth img
+{
+	width: 100%;
+	height:auto;
+}
+.fifth h2
+{
+	font-weight: 700;
+	line-height: 43px;
+	margin-bottom: 35px;
+}
+.fifth .two
+{
+	padding-left:50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.fifth p
+{
+	line-height: 27px;
+	font-size: 17px;
+
+}
+.fifth .button
+{
+	float: left;
+	width: 200px;
+}
+.fifth h1
+{
+	color:#fdcf71;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+.fifth p
+{
+	margin-bottom: 50px;
+}
+.fifth h5
+{
+	font-weight: 700;
+}
+</style>
+
+<div class="w3-container fifth pads">
+	<div class="w3-half w3-padding">
+		<img src="./img/h1-image.jpg">
+	</div>
+	<div class="w3-half two">
+		<h2>Empowering children <br>
+		to reach their potential.</h2>
+		<p>
+			Etiam porttitor risus massa nec condiment gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequatipsutis sem nibh id eis sed odio sit amet nibh
+		</p>
+		<div class="button">
+			<h1>168+</h1>
+			<h5>Success Stories</h5>
+		</div>
+		<div class="button">
+			<h1>347+</h1>
+			<h5>Scheduled Events</h5>
+		</div>
+		<div class="button">
+		</div>
+	</div>
+</div>
+<!--/fifth-->
+
+
+<!--sixth-->
+<style type="text/css">
+.sixth
+{
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.sixth h1
+{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 40px;
+}
+.sixth p
+{
+	text-align: center;
+	line-height: 30px;
+	font-size: 17px;
+	margin-bottom: 60px;
+}
+.sixth h5
+{
+	font-size: 25px;
+	font-weight: 700;
+}
+.sixth img
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+.sixth .text
+{
+	font-size: 15px;
+}
+.sixth .boundary
+{
+	overflow: hidden;
+}
+.sixth .cover
+{
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+.sixth .noimg-1
+{
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.sixth .noimg-2
+{
+	padding:15px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.sixth .teacher
+{
+	margin-top:15px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	color: #b9b9b9;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+.sixth .teacher:hover
+{
+	color: #202020;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+.sixth .w3-border, .sixth .w3-border-top
+{
+	border-color: #b9b9b9;
+}
+.sixth .t
+{
+	display: table-row;
+}
+.sixth .t-1
+{
+	display: table-cell;
+	padding-right: 20px;
+}
+.sixth .t-2
+{
+	display: table-cell;
+	float: right;
+	border-radius: 2px;
+	color: #fff;
+	padding: 5px;
+	width: 70px;
+	text-align: center;
+	background-color: #fdcf71;
+}
+</style>
+<div class="w3-container sixth pads">
+	<h1>Popular Courses</h1>
+	<p>
+		Etiam porttitor risus massa nec condiment gravida nibh vel velit auctor aliquetnean<br>
+		sollicitudin, lorem quis bibendum auci elit consequatipsutis sem nibh id elit.
+	</p>
+	<div class="w3-container">
+		<div class="w3-third w3-padding">
+			<div class="w3-border">
+				<div class="boundary">
+					<div class="cover">
+						<img src="./img/course-img-19.jpg">
+					</div>
+				</div>
+				<div class="noimg">
+					<div class="noimg-1">
+						<div class="t">
+							<div class="t-1">
+								<h5>Basic English for Kids</h5>
+							</div>
+							<div class="t-2">
+								<i class="fas fa-star"></i>&nbsp;&nbsp;5.0
+							</div>
+						</div>
+						<div class="teacher">Mellica Jones</div>
+						<div class="text">
+							Blandit accumsan ei vis, maiorum epicureo at mei nibh viderer ius pri te fabulas molestiae necess
+						</div>
+					</div>
+					<div class="text w3-border-top noimg-2">
+			 			<i class="fas fa-users"></i>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 			<i class="far fa-clock"></i>&nbsp;&nbsp;2 Hours
+			 		</div>
+			 	</div>
+		 	</div>
+		</div>
+		<div class="w3-third w3-padding">
+			<div class="w3-border">
+				<div class="boundary">
+					<div class="cover">
+						<img src="./img/course-img-16.jpg">
+					</div>
+				</div>
+				<div class="noimg">
+					<div class="noimg-1">
+						<div class="t">
+							<div class="t-1">
+								<h5>Fun Yoga for Toddlers</h5>
+							</div>
+							<div class="t-2">
+								<i class="fas fa-star"></i>&nbsp;&nbsp;4.7
+							</div>
+						</div>
+						<div class="teacher">Mellica Jones</div>
+						<div class="text">
+							Blandit accumsan ei vis, maiorum epicureo at mei nibh viderer ius pri te fabulas molestiae necess
+						</div>
+					</div>
+					<div class="text w3-border-top noimg-2">
+			 			<i class="fas fa-users"></i>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 			<i class="far fa-clock"></i>&nbsp;&nbsp;2 Hours
+			 		</div>
+			 	</div>
+		 	</div>
+		</div>
+		<div class="w3-third w3-padding">
+			<div class="w3-border">
+				<div class="boundary">
+					<div class="cover">
+						<img src="./img/course-img-20.jpg">
+					</div>
+				</div>
+				<div class="noimg">
+					<div class="noimg-1">
+						<div class="t">
+							<div class="t-1">
+								<h5>Weekend Music Lessons</h5>
+							</div>
+							<div class="t-2">
+								<i class="fas fa-star"></i>&nbsp;&nbsp;4.9
+							</div>
+						</div>
+						<div class="teacher">Mellica Jones</div>
+						<div class="text">
+							Blandit accumsan ei vis, maiorum epicureo at mei nibh viderer ius pri te fabulas molestiae necess
+						</div>
+					</div>
+					<div class="text w3-border-top noimg-2">
+			 			<i class="fas fa-users"></i>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 			<i class="far fa-clock"></i>&nbsp;&nbsp;2 Hours
+			 		</div>
+			 	</div>
+		 	</div>
+		</div>
+
+	</div>
+</div>
+<!--/sixth-->
+
+<!-- footer -->
+<style type="text/css">
+.footer
+{
+	background-image: url('./img/h1-slide-3.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+</style>
+<div class="w3-container footer pads">
+	<div class="w3-quarter">
+		<h5>Educate</h5>
+		<p>Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home</p>
+		<div class="one">
+			<i class="fas fa-phone"></i>&nbsp;&nbsp;+91 9654009964
+		</div>
+		<div class="two">
+			<i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;Mon - Sat 8.00 - 18.00
+		</div>
+	</div>
+	<div class="w3-quarter">
+		<h5>Latest News</h5>
+		<div class="button">Graduate Admissions</div>
+		<div class="text">by Craig Murphy</div>
+		<div class="button">Continuing Education</div>
+		<div class="text">by Craig Murphy</div>
+		<div class="button">Current Students</div>
+		<div class="text">by Craig Murphy</div>
+	</div>
+	<div class="w3-quarter">
+		<h5>Useful Links</h5>
+		<div class="button">Popular Courses</div>
+		<div class="button">Forums</div>
+		<div class="button">Our Teachers</div>
+		<div class="button">Upcoming Events</div>
+		<div class="button">Contact Us</div>
+	</div>
+	<div class="w3-quarter">
+		<h5>Flexible learning</h5>
+		<img src="./img/footer-map-1.png">
+	</div>
+</div>
+<!-- /footer -->
+
+
+</body>
+</html>
